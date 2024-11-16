@@ -1,0 +1,116 @@
+.welcomeContentTop2 {
+    color: var(--colorText2);
+}
+
+.welcomeContentBottom2 {
+    color: var(--colorText2);
+}
+
+.body2 {
+    background-image: url("../design/background.png");
+}
+
+.toggleBlock2 {
+    border: 3px solid var(--color7);
+    background-color: var(--color5);
+    box-shadow: 1px 1px 3px var(--color7) inset;
+}
+
+.toggleTheme2 {
+    background-color: var(--color6);
+    transform: translateX(28px);
+    box-shadow: 2px 1px 5px var(--color7);
+}
+
+.infoBlock2 {
+    background-color: rgba(149, 174, 191, 0.5);
+}
+
+.infoPage1-2 {
+    color: var(--colorText2);
+}
+
+.infoPage2-2 {
+    color: var(--colorText2);
+}
+
+.partyList2 {
+    display: flex;
+    justify-content: space-between;
+    align-content: start;
+    width: 615px;
+    height: 420px;
+    overflow-y: auto;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 546px) {
+    .partyList2 {
+        justify-content: center;
+        height: 360px;
+    }
+}
+
+.partyList2::-webkit-scrollbar {
+    width: 10px;
+}
+
+.partyList2::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: var(--color6);
+}
+
+.partyList2::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background-color: var(--color5);
+}
+
+.userCard2 {
+    border: 1px solid var(--color7);
+    background-color: var(--color5);
+}
+
+.fa-user2 {
+    color: var(--color7);
+}
+
+.infoInput2 {
+    background-color: var(--color5);
+    border: 1px solid var(--color7);
+    color: var(--colorText2);
+}
+
+.infoInput2:focus {
+    background-color: var(--color5);
+    border: 1px solid var(--color7);
+    color: var(--colorText2);
+    box-shadow: 1px 3px 10px var(--colorText2);
+}
+
+.infoInput2::placeholder {
+    color: rgb(27,29,26, 0.6);
+}
+
+.line2 {
+    background-color: rgb(27,29,26, 0.6);
+}
+
+.welcomeBlock2 {
+    background-color: rgba(149, 174, 191, 0.5);
+}
+
+.clockBlock2 {
+    background-color: var(--color5);
+    box-shadow: 0 10px 15px var(--color7);
+    color: var(--colorText2);
+}
+
+.time2 {
+    color: var(--color6);
+}
+
+.hg-btn2 {
+    color: var(--color6);
+    background-color: var(--color7);
+}

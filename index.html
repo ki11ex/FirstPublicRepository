@@ -1,11 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Мой первый файл в репозитории</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="snowFlakes/snow.min.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/avatarBG.css">
+    <title>Happy Gift</title>
 </head>
-<body  class="body">
-    <h1>Мой первый файл в репозитории</h1>
-    <h2>Чему я очень рад</h2>
+<body class="body">
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="welcome">
+                <div class="clockBlock">
+                    <div class="days">
+                        <span class="hg-time1 time">000</span>
+                        :
+                    </div>
+                    <div class="hours">
+                        <span class="hg-time2 time">00</span>
+                        :
+                    </div>
+                    <div class="minutes">
+                        <span class="hg-time3 time">00</span>
+                        :
+                    </div>
+                    <div class="seconds">
+                        <span class="hg-time4 time">00</span>
+                    </div>
+                </div>
+                <div class="welcomeBlock">
+                    <div class="theme">
+                        <div class="toggleBlock">
+                            <div class="toggleTheme"></div>
+                        </div>
+                    </div>
+                    <div class="welcomeContentTop">До Нового года осталось:</div>
+                    <div class="welcomeContentBottom">Пора готовиться дарить и получать подарки!</div>
+                    <div class="hg-btnBox">
+                        <button type="button" class="hg-btn">Присоединиться</button>
+                    </div>
+                </div>
+                <div class="infoBlock colorText infoText">
+                    <div id="carouselInfo" class="carousel slide" data-bs-touch="true">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="infoPage1 text-center">
+                                    <div class="row m-3">
+                                        <div class="col-12">
+                                            <p>В этом году решили разыграть "Тайного санту". Это традиционная рождественская игра, целью которой является анонимный обмен подарками в группе играющих людей. К этой игре часто прибегают на работе или в больших семьях.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row m-3">
+                                        <div class="col-12">
+                                            <p> Для поддержания анонимности будет проведена жеребьевка за 3 недели до нового года (9 декабря) со всеми участниками игры. В жеребьевке вам не попадется партнер (муж, жена, парень, девушка). По итогам жеребьевки у вас будет "подопечный", которому и нужно будет подарить подарок на Новый год.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row m-3">
+                                        <div class="col-12">
+                                            <p>По договоренности подарки будем дарить в диапазоне <span class="color2">от 1500 до 2000 рублей</span>, а так же будет возможность указать пожелания.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="infoPage2">
+                                    <div class="row m-3">
+                                        <label>
+                                            Введите пожелание:
+                                            <input class="form-control form-control-lg infoInput" type="text" placeholder="Хочу много шоколадок...">
+                                        </label>
+                                    </div>
+                                    <div class="row m-3">
+                                        <div class="col-12">
+                                            <p>Список участников: <button type="button" class="btn btn-danger btn-test">Add Card</button></p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 lineBox">
+                                            <div class="line"></div>
+                                        </div>
+                                    </div>
+                                    <div class="row m-3 party partyList">
+<!--                                        <div class="col-6 userCard"><i class="userAvatar userAvatarBG15"></i>Рашков Алексей Владимирович</div>-->
+<!--                                        <div class="col-6 userCard"><i class="userAvatar userAvatarBG8"></i>Рашков Владимир Владимирович</div>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev carouselInfoButtonPrev hidden" type="button" data-bs-target="#carouselInfo" data-bs-slide="prev" disabled>
+                            <span class="carousel-control-prev-icon carouselInfoButtonIcon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next carouselInfoButtonNext" type="button" data-bs-target="#carouselInfo" data-bs-slide="next">
+                            <span class="carousel-control-next-icon carouselInfoButtonIcon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="snowFlakes/Snow.js"></script>
+    <script>
+        new Snow ({
+            showSnowBallsIsMobile: false,
+            countSnowflake: 30,
+            showSnowBalls: false
+        })
+    </script>
+    <script src="js/carouselButton.js"></script>
+    <script src="js/animate.js"></script>
+    <script src="js/userCard.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-<!--Комментарий-->

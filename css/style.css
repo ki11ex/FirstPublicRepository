@@ -1,0 +1,448 @@
+:root {
+    --color5: #95aebf;
+    --color6: #BF5454;
+    --colorText2: #1b1d1a;
+    --color7: #394D59;
+    --color1: #195E59;
+    --color2: #D99E6A;
+    --color4: #01403A;
+    --colorText: #bcd1d0;
+}
+
+
+* {
+    font-family: 'nunito', sans-serif;
+}
+
+.body {
+    background-image: url("../design/background2.png");
+    background-repeat: no-repeat;
+    background-size: 1920px, 100%;
+    transition: all 500ms ease;
+}
+
+/*colorClass*/
+
+.color1 {
+    color: var(--color1);
+    transition: all 500ms ease;
+}
+
+.color2 {
+    color: var(--color2);
+    transition: all 500ms ease;
+}
+
+.colorText {
+    color: var(--colorText);
+    transition: all 500ms ease;
+}
+
+.color4 {
+    color: var(--color4);
+    transition: all 500ms ease;
+}
+
+.color5 {
+    color: var(--color5);
+    transition: all 500ms ease;
+}
+
+.color6 {
+    color: var(--color6);
+    transition: all 500ms ease;
+}
+
+.color7 {
+    color: var(--color7);
+    transition: all 500ms ease;
+}
+
+.colorText2 {
+    color: var(--colorText2);
+    transition: all 500ms ease;
+}
+
+.theme {
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    margin-top: 15px;
+    margin-right: 15px;
+}
+
+.toggleBlock {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    width: 60px;
+    height: 30px;
+    border: 3px solid var(--color4);
+    border-radius: 15px;
+    background-color: var(--color1);
+    cursor: pointer;
+    transition: all 500ms ease;
+    box-shadow: 1px 1px 3px var(--color4) inset;
+}
+
+.toggleTheme {
+    width: 20px;
+    height: 20px;
+    background-color: var(--color2);
+    border-radius: 15px;
+    margin: 3px;
+    box-shadow: 1px 1px 5px var(--color4);
+    transition: all 500ms ease;
+}
+
+.welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40vh;
+}
+
+.welcomeBlock {
+    width: 500px;
+    height: 500px;
+    border-radius: 15px;
+    background-color: rgba(25,94,89, 0.5);
+    box-shadow: 0 13px 30px;
+    position: absolute;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    transition: all 500ms ease;
+}
+
+.infoBlock {
+    visibility: hidden;
+    width: 700px;
+    height: 10px;
+    border-radius: 15px;
+    transform: translateY(-150px);
+    background-color: rgba(0, 71, 67, 0.5);
+    position: absolute;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    transition: all 500ms ease;
+}
+
+.infoText {
+    font-size: 1.5em;
+}
+
+.infoText span {
+    font-weight: bold;
+}
+
+.infoInput {
+    background-color: var(--color1);
+    color: var(--colorText);
+    border: 1px solid var(--color4);
+    transition: border 500ms ease, background-color 500ms ease, color 500ms ease, transform 200ms ease;
+}
+
+.infoInput:focus {
+    background-color: var(--color1);
+    border: 1px solid var(--color4);
+    color: var(--colorText);
+    box-shadow: 1px 3px 10px var(--colorText2);
+    transform: translate(-1px, -3px);
+}
+
+.infoInput::placeholder {
+    color: rgb(188,209,208, 0.6);
+    transition: all 500ms ease;
+}
+
+.carouselInfoButtonPrev {
+    transform: translate(-40px);
+    scale: 0.7;
+}
+
+.carouselInfoButtonNext {
+    transform: translate(40px);
+    scale: 0.7;
+}
+
+.carouselInfoButtonIcon {
+    scale: 1.7;
+}
+
+.infoPage1 {
+    width: 700px;
+    height: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: all 500ms ease;
+    color: var(--colorText);
+}
+
+.welcomeContentTop {
+    text-align: center;
+    transform: translateY(40px);
+    font-size: 2em;
+    color: var(--colorText);
+    transition: all 500ms ease;
+}
+
+.welcomeContentBottom {
+    text-align: center;
+    transform: translateY(230px);
+    font-size: 2em;
+    color: var(--colorText);
+    transition: all 500ms ease;
+}
+
+.infoPage2 {
+    width: 700px;
+    height: 600px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: var(--colorText);
+}
+
+.infoPage2 p, label{
+    transition: all 500ms ease;
+    margin-bottom: 0;
+}
+
+.partyList {
+    display: flex;
+    justify-content: space-between;
+    align-content: start;
+    width: 615px;
+    height: 420px;
+    overflow-y: auto;
+    flex-wrap: wrap;
+}
+
+.partyList::-webkit-scrollbar {
+    width: 10px;
+}
+
+.partyList::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: var(--color2);
+}
+
+.partyList::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background-color: var(--color1);
+}
+
+.lineBox {
+    display: flex;
+    justify-content: center;
+}
+
+.line {
+    width: 90%;
+    height: 2px;
+    background-color: rgb(188,209,208, 0.6);
+    margin-bottom: 5px;
+    transition: all 500ms ease;
+}
+
+.userCard {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 280px;
+    height: 60px;
+    margin: 10px;
+    border: 1px solid var(--color4);
+    border-radius: 10px;
+    background-color: var(--color1);
+    font-size: 0.9em;
+    line-height: 22px;
+    transition: border 500ms ease, background-color 500ms ease, color 500ms ease, transform 200ms ease, box-shadow 200ms ease;
+}
+.userCard:hover {
+    box-shadow: 1px 3px 10px var(--colorText2);
+    transform: translate(-1px, -3px);
+}
+
+.userAvatar {
+    background-size: cover;
+    transform: translateX(-12px);
+    height: 100%;
+    width: 50px;
+    border-radius: 10px 0 0 10px;
+    border-right: 1px solid var(--color4);
+}
+
+.btn-test {
+
+}
+
+.clockBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 700px;
+    height: 150px;
+    position: absolute;
+    transform: translate(0,-60px);
+    background-color: var(--color1);
+    border-radius: 15px;
+    box-shadow: 0 10px 15px var(--color4);
+    z-index: 1;
+    color: var(--colorText);
+    font-size: 80px;
+    padding: 20px;
+    transition: all 500ms ease;
+}
+
+.time {
+    font-size: 80px;
+    font-weight: 600;
+    color: var(--color2);
+    transition: all 500ms ease;
+}
+
+.hg-btnBox {
+    display: flex;
+    width: 500px;
+    height: 500px;
+    justify-content: center;
+    align-items: end;
+    position: absolute;
+    transform: translatey(-160px);
+    padding-bottom: 25px;
+}
+
+.hg-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 60px;
+    position: absolute;
+    border-radius: 15px;
+    border: none;
+    color: var(--color2);
+    background-color: var(--color4);
+    font-size: 1.7em;
+    transition: border 500ms ease, background-color 500ms ease, color 500ms ease, transform 200ms ease, box-shadow 200ms ease;
+}
+
+.hg-btn:hover {
+    box-shadow: 2px 5px 10px var(--colorText2);
+    transform: translate(-1px, -1px);
+}
+
+@media (max-width: 768px) {
+    .welcome {
+        scale: 0.7;
+    }
+}
+
+@media (max-width: 546px) {
+    .welcome {
+        scale: 0.5;
+        margin-top: 30vh;
+    }
+
+    .toggleBlock {
+        scale: 1.3;
+    }
+
+    .hg-btnBox {
+        padding-bottom: 100px;
+    }
+
+    .hg-btn {
+        scale: 1.3;
+    }
+
+    .welcomeContentTop {
+        font-size: 2.5em;
+        transform: translateY(0);
+        line-height: 40px;
+        margin: 10px;
+    }
+
+    .welcomeContentBottom {
+        font-size: 2.3em;
+        transform: translateY(170px);
+    }
+
+    .infoBlock {
+        transform: translateY(-170px);
+    }
+
+    .infoPage1 {
+        height: 420px;
+        overflow-y: auto;
+        flex-wrap: wrap;
+        font-size: 1.3em;
+    }
+
+    .infoPage1::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    .infoPage1::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: var(--color2);
+    }
+
+    .infoPage1::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+        border-radius: 10px;
+        background-color: var(--color1);
+    }
+
+    .infoPage2 label{
+        font-size: 1.5em;
+    }
+
+    .infoPage2 p{
+        font-size: 1.5em;
+    }
+
+    .infoInput {
+        height: 80px;
+        font-size: 0.8em;
+    }
+
+    .partyList {
+        justify-content: center;
+        height: 360px;
+    }
+
+    .userCard {
+        width: 580px;
+        height: 80px;
+        font-size: 1.2em;
+    }
+
+    .userAvatar {
+        width: 70px;
+    }
+
+}
+
+@media (max-width: 360px) {
+    .welcome {
+        scale: 0.4;
+    }
+}
+
+@media (min-width: 1921px) {
+    .body {
+        background-size: cover;
+    }
+}
+
+@media (min-width: 2500px) {
+    .welcome {
+        scale: 1.5;
+    }
+}
+
